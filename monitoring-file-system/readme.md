@@ -14,7 +14,7 @@ Contoh:
 - Move folder 📁
 
 # How to use
-Start the server
+Start the application
 
 ```bash
   python app.py C:/
