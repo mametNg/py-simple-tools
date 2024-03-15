@@ -1,0 +1,44 @@
+﻿<IntegrationFile Name="TaskList" Version="6" ID="7e66ac60-d8ba-4a9c-a3ad-0840d765529f">
+  <ActionGroup Name="IntegrationFileActionGroup" ID="0e3903df-85ad-4622-9578-56be45120e3f" RunMethod="Sequential" MessagingEnabled="false">
+    <Actions>
+      <FileTriggerIntegration Name="Label Test" ID="97e77444-2ba8-434c-b95c-08f354657174" IgnoreErrors="true" DetectionMethod="Notification" Filter="*.csv" DetectionExtension="dat" LockedFileTimeout="30000">
+        <ActionGroup ID="a778ec6f-0095-4acb-8742-6f40a019ab20" RunMethod="Sequential" MessagingEnabled="false">
+          <Actions>
+            <IntegrationCommandScriptAction Name="Print Command Script" ID="39b4c58f-7f5f-477f-9dd2-989e835fdb74" IgnoreErrors="true">
+              <Script>
+                <Value>%EventData%</Value>
+              </Script>
+              <BTCommandLineCredentials />
+            </IntegrationCommandScriptAction>
+          </Actions>
+        </ActionGroup>
+        <ScanFolder Path="C:\xampp\htdocs\python\label_test_py\label-print\trigger\" />
+      </FileTriggerIntegration>
+    </Actions>
+  </ActionGroup>
+  <Metadata>
+    <Properties>
+      <Properties Name="BuilderName" Type="System.String">
+        <Value>TaskListToIntegrationFileConverter</Value>
+      </Properties>
+      <Properties Name="BuilderVersion" Type="System.Double">
+        <Value>1</Value>
+      </Properties>
+      <Properties Name="MostRecentlyUsedVariables" Type="System.String">
+        <Value>EventData</Value>
+      </Properties>
+      <Properties Name="SelectedDeploymentConfiguration" Type="System.String">
+        <Value>Custom</Value>
+      </Properties>
+      <Properties Name="SelectedIntegration" Type="System.Int32">
+        <Value>16</Value>
+      </Properties>
+      <Properties Name="SelectedOptionsPage" Type="System.String">
+        <Value>0;0</Value>
+      </Properties>
+    </Properties>
+  </Metadata>
+  <SourcePath>C:\xampp\htdocs\python\label_test_py\bartender\TaskList.btin</SourcePath>
+  <IsPrinting>false</IsPrinting>
+  <IsPrintPreview>false</IsPrintPreview>
+</IntegrationFile>

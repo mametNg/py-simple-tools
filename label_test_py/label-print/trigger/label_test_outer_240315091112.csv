@@ -1,0 +1,4 @@
+%BTW% /AF=C:/xampp/htdocs/python/label_test_py/label-print/template/label_test_outer.btw /D=<Trigger File Name> /PRN="UIDSATO002" /R=3 /P
+%END%
+uid	cus_name	date	time	printer
+63092353	STMicroelectronics	15Mar24	09:11	UIDSATO002
